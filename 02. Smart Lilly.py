@@ -16,10 +16,9 @@ for year in range(1, age+1):
         toy_count += 1
 
 sum = sum + (toy_count * toy_price) - brother_money
+diff = abs(sum - washing_machine_price)
 
 if sum >= washing_machine_price:
-    diff = sum - washing_machine_price
     print('Yes! {0:.2f}'.format(diff))
 else:
-    diff = washing_machine_price - sum
     print('No! {0:.2f}'.format(diff))    
