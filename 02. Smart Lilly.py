@@ -1,16 +1,25 @@
 age = int(input())
 washing_machine_price = float(input())
-toy0price = int(input())
+toy_price = int(input())
 
 toy_count = 0
 sum = 0
-money = 10
-
+money = 0
+brother_money = 0
 
 for year in range(1, age+1):
     if year%2==0:
-        
-        sum += money
         money = money + 10
+        sum += money
+        brother_money += 1
     else:
         toy_count += 1
+
+sum = sum + (toy_count * toy_price) - brother_money
+
+if sum >= washing_machine_price:
+    diff = sum - washing_machine_price
+    print('Yes! {0:.2f}'.format(diff))
+else:
+    diff = washing_machine_price - sum
+    print('No! {0:.2f}'.format(diff))    
