@@ -10,6 +10,6 @@ for current_year in range(1800, year_in_past+1):
     years += 1    
         
 if money_past > 0:
-    print(f"Yes! He will live a carefree life and will have {money_past} dollars left.")
+    print(f"Yes! He will live a carefree life and will have {round(money_past, 2)} dollars left.")
 else:            
-    print(f"He will need {abs(money_past)} dollars to survive.")
+    print(f"He will need {abs(round(money_past, 2))} dollars to survive.")
