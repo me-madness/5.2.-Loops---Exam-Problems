@@ -8,7 +8,7 @@ sum_midlle_price = 0
 bus_count = 0
 truck_count = 0
 train_count = 0
-for i in range(count_packages):
+for i in range(1, count_packages+1):
     weight_packages = int(input())
 
     if weight_packages <= 3:
@@ -18,14 +18,14 @@ for i in range(count_packages):
     else:
         train_count += 1  
  
-bus = bus_count / count_packages * 100
-truck = truck_count / count_packages * 100
-train = train_count / count_packages * 100
 sum_packages = bus_count + truck_count + train_count
-sum_midlle_price = (bus * ) + (truck * ) + (train * ) / sum_packages
+sum_midlle_price = (bus * 200 + truck * 175 + train * 120) / sum_packages
+bus = bus_count / sum_packages * 100
+truck = truck_count / sum_packages * 100
+train = train_count / sum_packages * 100
 
 
-print(sum_midlle_price)
-print(bus)
-print(truck)
-print(train)
+print(round(sum_midlle_price, 2))
+print(f'{bus} %')
+print(f'{truck} %')
+print(f'{train} %')
