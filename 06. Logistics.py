@@ -3,6 +3,7 @@ bus = 0
 truck = 0
 train = 0
 sum_packages = 0
+sum_midlle_price = 0
 
 bus_count = 0
 truck_count = 0
@@ -21,5 +22,10 @@ bus = bus_count / count_packages * 100
 truck = truck_count / count_packages * 100
 train = train_count / count_packages * 100
 sum_packages = bus_count + truck_count + train_count
+sum_midlle_price = (bus * ) + (truck * ) + (train * ) / sum_packages
 
-               
+
+print(sum_midlle_price)
+print(bus)
+print(truck)
+print(train)
