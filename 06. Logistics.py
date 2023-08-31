@@ -4,7 +4,6 @@ truck = 0
 train = 0
 sum_packages = 0
 sum_midlle_price = 0
-
 bus_count = 0
 truck_count = 0
 train_count = 0
