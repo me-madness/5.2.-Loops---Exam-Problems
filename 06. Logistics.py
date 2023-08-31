@@ -8,7 +8,7 @@ sum_midlle_price = 0
 bus_count = 0
 truck_count = 0
 train_count = 0
-for i in range(1, count_packages+1):
+for i in range(1, count_packages-1):
     weight_packages = int(input())
 
     if weight_packages <= 3:
